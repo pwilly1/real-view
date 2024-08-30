@@ -1,0 +1,11 @@
+body {
+    background-color: aqua;
+
+}
+
+#content {
+    width: 70%;
+    margin: auto;
+    background:white; 
+    border-radius:5px;
+}

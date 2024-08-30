@@ -1,0 +1,52 @@
+body {
+    background-color:beige;
+
+
+}
+
+#something {
+    background-color: aliceblue;
+}
+#list{
+    padding-left:0;
+
+}
+
+#list li {
+    list-style:none;
+    border-bottom: 2px solid white;
+    color: none;
+}
+h2 {
+    text-align: center;
+}
+
+#list a {
+    text-decoration:none;
+    padding:5px;
+    background:grey;
+    color:black;
+    display:block;
+
+
+}
+
+#list li {
+    flex: 1;
+}
+
+/*media Queries*/
+/*Apply to 600px and larger*/
+@media only screen and (min-width:600px) {
+    .columns {
+        display: flex;
+    }
+    .one {
+        flex: 1;
+    }
+}
+
+/*Apply to 768px and larger*/
+@media only screen and (min-width:768px) {
+    
+}
