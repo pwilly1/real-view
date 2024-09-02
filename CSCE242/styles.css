@@ -1,52 +1,104 @@
+/* General Styles */
 body {
-    background-color:beige;
-
-
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
 }
 
-#something {
-    background-color: aliceblue;
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
-#list{
-    padding-left:0;
 
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
 }
 
-#list li {
-    list-style:none;
-    border-bottom: 2px solid white;
-    color: none;
+h1, h2, p {
+    margin: 0;
+    padding: 0;
 }
-h2 {
+
+/* Navigation Styles */
+#main-nav {
+    margin: 1rem;
+}
+
+#main_content h2 {
     text-align: center;
 }
 
-#list a {
+#list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#list li a{
     text-decoration:none;
-    padding:5px;
-    background:grey;
-    color:black;
-    display:block;
-
-
+    color: black;
 }
 
-#list li {
+.assignment-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
 }
 
-/*media Queries*/
-/*Apply to 600px and larger*/
-@media only screen and (min-width:600px) {
-    .columns {
+.assignment-box img {
+    width: 100%;
+    height: auto;
+}
+
+.assignment-content {
+    padding: 1rem;
+}
+
+.assignment-content h3 {
+    margin-top: 0;
+}
+
+.assignment-content p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assignment-box {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    #list {
         display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
-    .one {
+    
+    .assignment-box {
         flex: 1;
+        max-width: calc(50% - 1rem); /* Two boxes per row */
     }
 }
 
-/*Apply to 768px and larger*/
-@media only screen and (min-width:768px) {
-    
-}
