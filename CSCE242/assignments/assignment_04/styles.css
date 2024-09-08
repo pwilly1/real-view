@@ -1,0 +1,104 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#logo {
+    position: absolute;
+    left:100px;
+    top: 20px;
+
+}
+header {
+    position:relative;
+    background-color: black;
+    height: 100px;
+}
+
+#nav2_container {
+    background-color:darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav2 li {
+    margin-right: 10px;
+
+
+}
+#nav2 li a{
+    text-decoration: none;
+    color: black;
+    font-size:small;
+}
+
+#img {
+    
+    position: relative
+}
+
+#img img {
+    overflow: hidden;
+    width: 100%; /* Make the image scale to the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any gaps around the image */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+}
+
+#grad {
+    background-color: darkred;
+    position:absolute;
+    left: 100px;
+    top: 92%;
+
+}
+
+#paragraph {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Centers text vertically */
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    justify-content: center;
+    background-color:white;
+    align-items: center;
+
+}
+
+.columns {
+    display: flex;
+    padding: 0;
+    margin: 5px;
+    list-style-type: none; /* Remove bullet points */
+
+}
+/* Main column styling */
+#main_nav {
+    position:absolute;
+    right: 50px;
+    top: 10%;
+    display: flex;
+    justify-content: flex-start; /* Align items closely to the left */
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove bullet points */
+    
+}
+
+/* List items styling */
+#main_nav li {
+    padding: 0; /* Remove padding to bring them closer */
+    margin-right: 10px; /* Small space between items */
+}
+
+/* Anchor tag styling */
+#main_nav li a {
+    text-decoration: none;
+    color: white;
+    font-size:small;
+}
+
+
+
