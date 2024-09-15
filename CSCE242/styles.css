@@ -91,6 +91,8 @@ h1, h2, p {
     margin: 0;
 }
 
+
+
 /* Media Queries */
 @media (max-width: 768px) {
     #list {

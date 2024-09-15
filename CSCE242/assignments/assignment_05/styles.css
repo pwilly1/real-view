@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #050461;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #627f8b;
+    font-size: 2em;
+}
+
+h2 {
+    color: #34d9df;
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    background-color: #ffffe5;
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Allows absolute positioning of the square */
+}
+
+.count-box {
+    background-color: #54595c;
+    color: white;
+    font-size: 24px;
+}
+
+.count-box p {
+    font-size: 4em;
+    margin-top: 50px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.slider-box .slider {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.slider-box .square {
+    width: 100px;
+    height: 100px;
+    background-color: #474b53;
+    position: absolute;
+    top: 100px; /* Keeps the square in the same vertical position */
+     /* Default position (will be adjusted by JS) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+    transition: left 0.1s ease-in-out; /* Smooth movement */
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #627f8b;
+}
+
