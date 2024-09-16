@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: beige;
+    background-color: rgb(252, 252, 252);
     margin: 0;
     padding: 0;
 }
@@ -64,7 +64,7 @@ h1, h2, p {
 }
 
 .assignment-box {
-    background-color: #fff;
+    background-color: #9fd3e7;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
