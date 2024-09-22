@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f6f5ef;
+    background-color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -17,11 +17,11 @@ body {
 
 h1 {
     font-size: 2em;
-    color: #69878b;
+    color: #858585;
 }
 
 h2 {
-    color: #df8787;
+    color: #000000;
 }
 
 nav a {
@@ -36,7 +36,7 @@ nav a:hover {
 }
 
 .content {
-    background-color: #fef9dc;
+    background-color: #348d86;
     border: 1px solid #c9d2c4;
     padding: 20px;
     margin: 20px 0;
