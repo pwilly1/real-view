@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <head>
     <title>About Us</title>
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/about.css">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>RealView</h1>
-            <nav>
+            <nav id="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="listings.html">Property Listing</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="listings.html">Property Listing</a></li> <!-- link to the second page -->
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="agent_directory.html">Agent Directory</a></li>
                     <li><a href="stats.html">Market Statistics</a></li>
                 </ul>
             </nav>
+            <div>
+                <nav id="hamburger">
+                    <div id="toggle-nav">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </nav>
+                </div>
         </div>
+        
     </header>
+    
 
     <main>
         <section class="about-us">
@@ -45,5 +55,6 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
