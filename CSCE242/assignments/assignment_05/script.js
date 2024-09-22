@@ -31,3 +31,35 @@ document.getElementById('slider').addEventListener('input', function(event) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('toggle-nav').addEventListener('click', function(event) {  // (event) is parameter for click to store click information
+    document.getElementById('nav').classList.toggle("hidden");
+});
+
+
+
+
+        const ball = document.getElementById('ball');
+        const colorPicker = document.getElementById('colorPicker');
+
+        colorPicker.addEventListener('input', function() {
+            ball.style.backgroundColor = colorPicker.value;
+        });
+
+
+
+
+
+
+
