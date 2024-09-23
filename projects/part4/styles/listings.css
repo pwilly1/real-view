@@ -40,9 +40,14 @@
 }
 
 .listing-grid {
-    display: inline-block;
+    position: absolute;
+    left: 30%;
+    top: 27%;
+    display: flex;
+    flex-wrap: wrap;
     width: 75%;
     vertical-align: top;
+    gap: 10px;
 }
 
 .listing-box {
@@ -58,30 +63,53 @@
     background-color: #e0e0e0;
     margin-bottom: 10px;
 }
-/* Styles for mobile screens */
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column;
+
+
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+    .filter-section {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
     }
 
-    nav ul {
-        flex-direction: column;
-        display: none;
+    .listing-grid {
+        position: static;
+        width: 100%;
     }
 
-    /* Hamburger menu styles */
-    .hamburger {
-        display: block;
+    .listing-box {
+        width: 100%;
+    }
+
+    .property-listings h2 {
+        font-size: 24px;
+    }
+
+    .map-circle {
+        width: 150px;
+        height: 150px;
     }
 }
 
-/* Styles for larger screens */
-@media (min-width: 601px) {
-    .hamburger {
-        display: none;
+@media (max-width: 480px) {
+    .property-listings h2 {
+        font-size: 20px;
     }
 
-    nav ul {
-        display: flex;
+    .map-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .filter-section select, .filter-section button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .image-placeholder {
+        height: 120px;
     }
 }
+
+

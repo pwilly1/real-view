@@ -35,48 +35,32 @@
 }
 
 .charts-grid {
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .chart-box {
-    width: 300px;
-    height: 200px;
-    background-color: #f0f0f0;
+    position: relative;
+    width: 425px;
+    height: 350px; /* Increase the height to accommodate the title and image */
+    
     padding: 10px;
+    box-sizing: border-box; /* Ensures padding is included in the width/height */
+}
+
+.chart-box h3 {
+    margin: 0;
+    padding-bottom: 10px; /* Space between the title and the image */
+    font-size: 18px;
 }
 
 .chart-box img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/* Styles for mobile screens */
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-        display: none;
-    }
-
-    /* Hamburger menu styles */
-    .hamburger {
-        display: block;
-    }
+    height: calc(100% - 40px); /* Subtract the height of the title */
+    object-fit: contain;
+    display: block; /* Ensures image is treated as a block-level element */
 }
 
-/* Styles for larger screens */
-@media (min-width: 601px) {
-    .hamburger {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-    }
-}

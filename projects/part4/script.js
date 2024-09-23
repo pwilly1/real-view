@@ -1,8 +1,6 @@
-function toggleMenu() {
-    const nav = document.querySelector('nav ul');
-    if (nav.style.display === "flex") {
-        nav.style.display = "none";
-    } else {
-        nav.style.display = "flex";
-    }
-}
+
+
+
+document.querySelector("#hamburger").onclick = () => {
+    document.getElementById("main-nav").classList.toggle("hidden-small");
+  };

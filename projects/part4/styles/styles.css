@@ -6,13 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: url(../images/estate.jpg);
+    background-size: cover;
 }
 
 header {
-    background-color: #fff;
+    background-color: gray;
     padding: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    color: #3D52A0;
 }
 
 .container {
@@ -40,8 +44,16 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-size: 16px;
+}
+nav ul li {
+    background-color: #3D52A0;
+    padding: 5px;
+    border-radius: 25px;
+    outline-style:dashed;
+    outline-width: 2px;
+    outline-color: darkgray;
 }
 
 .auth a {
@@ -70,8 +82,12 @@ nav ul li a {
 }
 
 .featured-listings h2 {
-    font-size: 24px;
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
     margin-bottom: 20px;
+    background-color: #3D52A0;
 }
 
 .listing-grid {
@@ -81,18 +97,32 @@ nav ul li a {
 }
 
 .listing-box {
-    width: 250px;
-    height: 150px;
-    background-color: #e0e0e0;
-    border: 2px solid #ccc;
+    width: 400px;
+    height: 300px;
+    
+}
+.listing-box img {
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+    display: block;
 }
 
 .why-choose-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 40px 0;
 }
 
 .why-choose-us h2 {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center; /* Align the text vertically in the center */
+    width: max-content;
+    background-color: #3D52A0;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -106,33 +136,65 @@ nav ul li a {
 
 .choose-box p {
     margin-bottom: 10px;
-    font-size: 18px;
+    padding:20px;
+    font-size: 30px;
     font-weight: bold;
 }
+#hamburger {
+    padding-left: 0px;
+    margin: 0;
+}
+#hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  
+}
+#hamburger a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+.hidden {
+    display: none;
+}
+
+
+#toggle-nav div {
+    background-color: #333;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.hidden-small {
+    display:none;
+  }
+
+
+
 /* Styles for mobile screens */
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
     }
 
-    nav ul {
-        flex-direction: column;
-        display: none;
-    }
-
     /* Hamburger menu styles */
-    .hamburger {
+    #hamburger {
         display: block;
+    }
+    .hidden {
+        display: none;
     }
 }
 
 /* Styles for larger screens */
 @media (min-width: 601px) {
-    .hamburger {
+    #hamburger {
         display: none;
     }
-
-    nav ul {
-        display: flex;
+    
+    .hidden-small {
+        display:flex;
     }
+
 }
