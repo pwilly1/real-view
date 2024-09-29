@@ -26,11 +26,17 @@ nav ul li a {
     color: #000000;
     font-size: 16px;
 }
+.auth a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
 nav ul li {
     background-color: #3D52A0;
     padding: 5px;
     border-radius: 25px;
-    outline-style:dashed;
+    outline-style:auto;
     outline-width: 2px;
     outline-color: darkgray;
 }
