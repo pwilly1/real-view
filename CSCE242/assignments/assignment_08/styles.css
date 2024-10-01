@@ -66,3 +66,20 @@ footer a {
     color: #4b8f8c;
     text-decoration: none;
 }
+.description-box {
+    background-color: #f6f3d4;
+    border: 1px solid #c0c0c0;
+    margin: 10px 10%;
+    padding: 20px;
+}
+
+.description-box h3 {
+    font-size: 1.5em;
+    color: #4b8f8c;
+}
+
+.description-box p {
+    font-size: 1.2em;
+    color: #d16e60;
+}
+
