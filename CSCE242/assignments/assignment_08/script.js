@@ -1,7 +1,7 @@
 // Associative array using an array-like object
 let imageInfo = [];
 imageInfo["party.png"] = { title: "Party Time", description: "A party hat!" };
-imageInfo["koala.png"] = { title: "Koala", description: "He has a bow tie" };
+imageInfo["koala.png"] = { title: "bow tie", description: "He has a bow tie" };
 imageInfo["umbrella.png"] = { title: "Rainy Day", description: "umbrella!" };
 imageInfo["clipboard.png"] = { title: "Clipboard", description: "Time to take notes and stay organized." };
 imageInfo["shovel.jpg"] = { title: "Gardening", description: "Ready to plant some flowers!" };
