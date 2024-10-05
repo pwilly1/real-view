@@ -32,8 +32,8 @@
 }
 
 .image-placeholder img {
-    width: 100%;
-    height: 100%; /* Subtract the height of the title */
+    width: 200px;
+    height: 200px; /* Subtract the height of the title */
     object-fit: contain;
     display: block;
 }
