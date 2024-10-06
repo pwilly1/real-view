@@ -88,6 +88,7 @@ h1, h2, p {
     width: 200px;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
+    margin-right: 50px;
 
 }
 
@@ -96,6 +97,7 @@ h1, h2, p {
     justify-content: center;
     width: 200px;
     height: auto;
+    border: 1px solid black;
 }
 
 .assignment-content {
@@ -135,9 +137,6 @@ h1, h2, p {
         gap: 1rem;
     }
     
-    .assignment-box {
-        flex: 1;
-        max-width: calc(50% - 1rem); /* Two boxes per row */
-    }
+    
 }
 

@@ -13,7 +13,7 @@ const ctx3 = document.getElementById('chart3').getContext('2d');
 
 // Create a line chart for "Average Property Prices"
 const chart1 = new Chart(ctx1, {
-    type: 'line', // Change to 'bar', 'pie', etc., for other types of charts
+    type: 'line', 
     data: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'], // X-axis labels
         datasets: [{
