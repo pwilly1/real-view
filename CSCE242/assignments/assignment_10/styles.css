@@ -1,0 +1,48 @@
+body {
+    background-color: antiquewhite;
+}
+
+section {
+    position: relative; /* Make section a positioned element */
+    padding: 10px;
+}
+
+section img {
+    display: block;
+    height: auto;
+}
+
+.overlay {
+    position: absolute; /* Position overlay over the image */
+    top: 68%;
+    width: 88%;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    z-index: 2;
+    text-align: center; /* Center the text */
+    display: none; /* Initially hidden */
+}
+
+section:hover .overlay {
+    display: block; /* Show the overlay on hover */
+}
+
+#icecream-container {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-wrap: wrap;
+    top: 20%;
+
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
