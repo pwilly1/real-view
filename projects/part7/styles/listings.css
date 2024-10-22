@@ -1,0 +1,116 @@
+/* Property listings-specific styles */
+.property-listings {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.property-listings h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    display: inline-block;
+    width: 20%;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+.filter-section button, .filter-section select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.map-placeholder {
+    text-align: center;
+}
+
+.map-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+}
+
+.listing-grid {
+    position: absolute;
+    left: 30%;
+    top: 27%;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: top;
+    gap: 10px;
+}
+
+.listing-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 300px;;
+    width: 250px;;
+    border-radius: 15px;
+}
+
+.image-placeholder{
+    width: 100%;
+    height: 150px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+    .filter-section {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .listing-grid {
+        position: static;
+        width: 100%;
+    }
+
+    .listing-box {
+        width: 100%;
+    }
+
+    .property-listings h2 {
+        font-size: 24px;
+    }
+
+    .map-circle {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .property-listings h2 {
+        font-size: 20px;
+    }
+
+    .map-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .filter-section select, .filter-section button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .image-placeholder {
+        height: 120px;
+    }
+}
+
+
