@@ -19,40 +19,41 @@ adminBtn.addEventListener('click', () => {
     window.location.href = "admin-dashboard.html";  // Redirects to admin dashboard page
 });
 
-// Seller form submission
-document.getElementById('sellerForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+document.getElementById("sellerForm").onsubmit = async (e) => {
+    e.preventDefault(); // prevent the default form submission
 
-    const sellerName = document.getElementById('sellerName').value;
-    const sellerEmail = document.getElementById('sellerEmail').value;
-    const propertyName = document.getElementById('propertyName').value;
-    const price = document.getElementById('price').value;
-    const description = document.getElementById('description').value;
-    const address = document.getElementById('address').value;
-    const bedrooms = document.getElementById('bedrooms').value;
-    const bathrooms = document.getElementById('bathrooms').value;
-    const sqft = document.getElementById('sqft').value;
-    const imageFile = document.getElementById('image').files[0];
+    const form = e.target;
+    const formData = new FormData(form); // get form data
+    const object = Object.fromEntries(formData); // convert form data to an object
+    const json = JSON.stringify(object); // convert object to JSON
+    const result = document.getElementById("result");
 
-    // Handle image uploading and other property data submission (in a real application this would be sent to a server)
-    const reader = new FileReader();
-    reader.onload = function (e) {
-        const newProperty = {
-            sellerName,
-            sellerEmail,
-            propertyName,
-            price,
-            description,
-            address,
-            bedrooms,
-            bathrooms,
-            sqft,
-            image: e.target.result
-        };
-        alert("Property submitted by seller!");
-        // Add logic to display the property or send it to a server for admin approval
-    };
-    reader.readAsDataURL(imageFile);
-});
+    result.innerHTML = "Submitting property...";
+
+    const response = await sendEmail(json); // send form data using sendEmail function
+
+    if (response.status == 200) {
+        result.innerHTML = "Property successfully submitted";
+    } else {
+        result.innerHTML = "Sorry, there was an error submitting your property";
+    }
+};
+
+const sendEmail = async (json) => {
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        });
+        return response;
+    } catch (error) {
+        console.log(error);
+        document.getElementById("result").innerHTML = "Error sending property data";
+    }
+};
 
 

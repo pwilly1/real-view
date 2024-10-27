@@ -52,6 +52,7 @@
         <section id="seller-section" style="display: none;">
             <h2>List Your Property as a Seller</h2>
             <form id="sellerForm">
+                <input type="hidden" name="access_key" value="7c839499-8fc9-4611-9330-db161dbe69c3" />
                 <label for="sellerName">Your Name:</label>
                 <input type="text" id="sellerName" name="sellerName" required>
 
@@ -80,9 +81,12 @@
                 <input type="number" id="sqft" name="sqft" required>
 
                 <label for="image">Upload Property Image:</label>
-                <input type="file" id="image" name="image" accept="image/*" required>
+                <input type="file" id="image" name="image" accept="image/*" >
+
+                <input type="hidden" name="redirect" value="http://127.0.0.1:5500/projects/part7/sell.html" />
 
                 <button type="submit">Submit property for review</button>
+                <p id="result"></p>
             </form>
         </section>
     </main>
