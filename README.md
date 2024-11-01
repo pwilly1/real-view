@@ -1,4 +1,4 @@
-# RealView - Part 7
+# RealView
 
 Welcome to the **RealView** project! This project is part of a real estate platform designed to provide users with dynamic and engaging experiences in property viewing and information.
 
